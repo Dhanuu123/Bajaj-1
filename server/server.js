@@ -27,7 +27,11 @@ app.post("/bfhl", (req, res) => {
 
     // Validate input data
     if (!Array.isArray(data)) {
+<<<<<<< HEAD
       return res.json(createResponse(false, "mohith_ch_21110010611", "mohith_chalamala@srmap.edu.in", "AP21110010611", {}, new Error("Invalid input format. Expected an array.")));
+=======
+      return res.json(createResponse(false, "karthikeya0103", "karthikeya_manam@srmap.edu.in", "AP21110010605", {}, new Error("Invalid input format. Expected an array.")));
+>>>>>>> 1da81db91f7c2c5411c45a338128e3903748b280
     }
 
     const numbers = [];
@@ -66,9 +70,15 @@ app.post("/bfhl", (req, res) => {
 
     const response = createResponse(
       true,
+<<<<<<< HEAD
       "mohith_ch_21110010611",
       "mohith_chalamala@srmap.edu.in",
       "AP21110010611",
+=======
+      "karthikeya0103",
+      "karthikeya_manam@srmap.edu.in",
+      "AP21110010605",
+>>>>>>> 1da81db91f7c2c5411c45a338128e3903748b280
       {
         numbers,
         alphabets,
@@ -81,7 +91,11 @@ app.post("/bfhl", (req, res) => {
 
     res.json(response);
   } catch (error) {
+<<<<<<< HEAD
     res.json(createResponse(false, "mohith_ch_21110010611", "mohith_chalamala@srmap.edu.in", "AP21110010611", {}, error));
+=======
+    res.json(createResponse(false, "karthikeya0103", "karthikeya_manam@srmap.edu.in", "AP21110010605", {}, error));
+>>>>>>> 1da81db91f7c2c5411c45a338128e3903748b280
   }
 });
 
