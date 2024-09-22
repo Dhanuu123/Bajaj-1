@@ -20,7 +20,7 @@ const Datasend = ({ setResponse }) => {
             }
 
             // Submit the data to the backend
-            const response = await axios.post('https://bajaj-1-2-n5as.onrender.com/bfhl', {
+            const response = await axios.post('https://bajaj-1-dfaa.onrender.com/bfhl', {
                 data,
             });
 
